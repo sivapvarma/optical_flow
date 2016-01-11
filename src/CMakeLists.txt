@@ -23,12 +23,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 
 #-------------------
-# Edvstools Build
+# dvs128tools Build
 #-------------------
 set(EXT_PROJECTS_DIR ${PROJECT_SOURCE_DIR}/ext)
-add_subdirectory(${EXT_PROJECTS_DIR}/edvstools)
-include_directories(${EDVSTOOLS_INCLUDE_DIR})
-link_directories(${EDVSTOOLS_LIB_DIR})
+add_subdirectory(${EXT_PROJECTS_DIR}/dvs128tools)
+include_directories(${EXT_PROJECTS_DIR}/dvs128tools/dvs128)
+link_directories(${DVS128TOOLS_LIB_DIR})
 
 # Doxygen
 find_package(Doxygen)
