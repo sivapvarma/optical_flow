@@ -3,7 +3,7 @@
 
 #include <fstream>
 
-#include <Edvs/Event.hpp>
+#include <dvs128/Event.hpp>
 #include <Eigen/Core>
 #include <Eigen/SparseCore>
 
@@ -20,7 +20,7 @@ using ComplexMatrix	= Eigen::Matrix<std::complex<float>,
 
 using SparseMatrix	= Eigen::SparseMatrix<float,Eigen::RowMajor>;
 
-using Event = Edvs::Event;
+using Event = dvs128::Event;
 using EventTime = uint64_t;
 
 #endif // EBOF_TYPEDEF_H

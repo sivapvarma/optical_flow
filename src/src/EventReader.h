@@ -5,7 +5,7 @@
 #include <thread>
 #include <atomic>
 
-#include "Edvs/EventStream.hpp"
+#include "dvs128/EventStream.hpp"
 
 #include "utils.h"
 
@@ -101,7 +101,7 @@ private:
 	bool openStream()
 	{
 		LOG_FUN;
-		stream_ = Edvs::OpenEventStream(uri_);
+		stream_ = dvs128::OpenEventStream(uri_);
 		return stream_->is_open();
 	}
 
@@ -134,7 +134,7 @@ private:
 
 	std::string uri_;
 
-	std::shared_ptr<Edvs::IEventStream> stream_;
+	std::shared_ptr<dvs128::IEventStream> stream_;
 	std::unique_ptr<std::thread> eventPublisher_;
 	std::atomic_bool running_;
 };

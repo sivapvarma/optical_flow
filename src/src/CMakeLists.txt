@@ -12,7 +12,7 @@ add_library(optical_flow
     FourierTransformerFFTW.cpp
 )
 
-add_dependencies(optical_flow edvstools)
+add_dependencies(optical_flow dvs128tools)
 target_link_libraries(optical_flow
     PRIVATE 
         ${GLOG_LIBRARIES}

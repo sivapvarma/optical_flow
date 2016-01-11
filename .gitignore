@@ -7,3 +7,5 @@ data/*.bin
 *.project
 *.cproject
 docs/html/*
+*.swp
+build/

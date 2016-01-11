@@ -11,7 +11,7 @@
 #include <Eigen/Dense>
 #include <Eigen/SparseCore>
 
-#include "Edvs/Event.hpp"
+#include "dvs128/Event.hpp"
 
 #include "common.h"
 #include "types.h"
