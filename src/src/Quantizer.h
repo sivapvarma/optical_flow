@@ -49,7 +49,7 @@ public:
         LOG_FUN_END;
     }
 
-    void quantize(const std::vector<Edvs::Event>& events)
+    void quantize(const std::vector<dvs128::Event>& events)
     {
         LOG_FUN_START;
         if(events.empty()) {

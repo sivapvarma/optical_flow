@@ -101,7 +101,8 @@ private:
 	bool openStream()
 	{
 		LOG_FUN;
-		stream_ = dvs128::OpenEventStream(uri_);
+		// stream_ = dvs128::OpenEventStream(uri_);
+		stream_ = dvs128::OpenEventStream();
 		return stream_->is_open();
 	}
 

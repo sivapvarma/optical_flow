@@ -17,7 +17,7 @@ target_link_libraries(optical_flow
     PRIVATE 
         ${GLOG_LIBRARIES}
         ${Boost_LIBRARIES}
-        ${EDVSTOOLS_LIB}
+        ${DVS128TOOLS_LIB}
         ${FFTW3_LIBRARIES}
         ${ZLIB_LIBRARIES}
 )
